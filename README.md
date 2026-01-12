@@ -1,11 +1,11 @@
 # AggieAce
 
-![React.js](https://img.shields.io/badge/react-18-61dafb)
-![Next.js](https://img.shields.io/badge/next.js-14-black)
-![Node.js](https://img.shields.io/badge/node.js-18+-green)
-![PostgreSQL](https://img.shields.io/badge/postgres-14+-336791)
-![Selenium](https://img.shields.io/badge/selenium-4.0+-43b02a)
-![Python](https://img.shields.io/badge/python-3.8+-blue)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 **AggieAce** is an intelligent syllabus-to-calendar conversion platform that saves students 10+ hours per semester by automatically extracting events, assignments, and deadlines from unstructured PDF/DOCX syllabi using LLM-powered extraction with SHA-256 hash-based caching.
 
