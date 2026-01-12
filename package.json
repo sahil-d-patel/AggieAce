@@ -1,0 +1,52 @@
+{
+  "name": "aggieace",
+  "version": "1.0.0",
+  "description": "AggieAce - Syllabus to Calendar Converter for Texas A&M University",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "clear:user-data": "cd backend && node scripts/clear-user-data.js",
+    "clear:cache": "cd backend && node scripts/clear-cache.js",
+    "clear:all": "npm run clear:user-data && npm run clear:cache",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:backend:unit": "cd backend && npm run test:unit",
+    "test:backend:integration": "cd backend && npm run test:integration",
+    "test:frontend": "cd frontend && npm test",
+    "test:frontend:unit": "cd frontend && npm run test:unit",
+    "test:frontend:integration": "cd frontend && npm run test:integration",
+    "test:coverage": "npm run test:backend:coverage && npm run test:frontend:coverage",
+    "test:backend:coverage": "cd backend && npm run test:coverage",
+    "test:frontend:coverage": "cd frontend && npm run test:coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:chrome": "playwright test --project=chromium",
+    "test:e2e:firefox": "playwright test --project=firefox",
+    "test:e2e:webkit": "playwright test --project=webkit",
+    "test:all": "npm run test && npm run test:e2e"
+  },
+  "keywords": [
+    "aggieace",
+    "texas-a&m",
+    "tamu",
+    "syllabus",
+    "calendar",
+    "icalendar",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "concurrently": "^8.2.2"
+  }
+}

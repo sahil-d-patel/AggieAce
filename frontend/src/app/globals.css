@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 245, 245, 245;
+  }
+
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    );
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Custom Button Styles */
+  .btn-primary {
+    @apply bg-tamu-maroon hover:bg-tamu-maroon-light text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-tamu-gray text-tamu-maroon font-semibold py-3 px-6 rounded-lg border-2 border-tamu-maroon transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Input Styles */
+  .input-field {
+    @apply w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-tamu-maroon focus:ring-2 focus:ring-tamu-maroon/20 outline-none transition-all duration-200;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 border border-gray-200;
+  }
+
+  /* Upload Zone */
+  .upload-zone {
+    @apply border-4 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-tamu-maroon transition-all duration-300 cursor-pointer bg-tamu-gray/30;
+  }
+
+  .upload-zone-active {
+    @apply border-tamu-maroon bg-tamu-maroon/5;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

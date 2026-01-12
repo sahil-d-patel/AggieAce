@@ -1,0 +1,17 @@
+.env
+.env.local
+.env.*.local
+node_modules/
+uploads/
+outputs/
+dist/
+build/
+.DS_Store
+coverage/
+.pytest_cache/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+test-results/
+e2e-report/
