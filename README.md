@@ -9,6 +9,9 @@
 
 **AggieAce** is an intelligent syllabus-to-calendar conversion platform that saves students 10+ hours per semester by automatically extracting events, assignments, and deadlines from unstructured PDF/DOCX syllabi using LLM-powered extraction with SHA-256 hash-based caching.
 
+This project originally started at HowdyHack 2024. After the competition ended, I refactored all the code and re-built it from the ground up.
+
+
 ---
 
 ### Project Status & Architecture Note
